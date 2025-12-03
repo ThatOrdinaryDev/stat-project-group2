@@ -28,3 +28,12 @@ ggplot(title_count, aes(x = reorder(Platform, -total_title), y = total_title)) +
 #total title released by Publisher
 publisher_total_titles <- vgsales %>% group_by(Publisher) %>% summarise(total_title = n()) %>% arrange(desc(total_title)) %>% slice_head(n = 30)
 ggplot(publisher_total_titles, aes(x = reorder(Publisher, -total_title), y = total_title)) + geom_col(fill = "orange") + geom_text(aes(label = total_title), hjust = -0.3, size = 4) + labs(title = "Total titles released by Publisher", x = "Publisher", y = "Total titles released") + theme_light() + coord_flip()
+
+#global sales differ across platforms and genres
+plat_sales <- vgsales %>% group_by(Platform, Genre) %>% summarise(Tot_Global_Sales = sum(Global_Sales, na.rm = TRUE)) %>% arrange(desc(Tot_Global_Sales))
+
+#for sum of each genre across all platforms
+print(plat_sales, n = 293)
+
+#bar chart for global sales across platforms and genres
+ggplot(plat_sales, aes(x = reorder(Platform, -Tot_Global_Sales), y = Tot_Global_Sales, fill = Genre)) + geom_bar(stat = "identity", position = "dodge") + labs(title = "global sales differ across genres and platforms", x = "platform", y = "Global sales (Million)") + theme_light()
