@@ -1,0 +1,295 @@
+Platform Genre        Tot_Global_Sales
+    <chr>    <chr>                   <dbl>
+  1 PS3      Action                 308.  
+  2 Wii      Sports                 292.  
+  3 X360     Shooter                279.  
+  4 PS2      Sports                 273.  
+  5 PS2      Action                 273.  
+  6 X360     Action                 243.  
+  7 Wii      Misc                   221.  
+  8 PS3      Shooter                196.  
+  9 PS2      Racing                 156.  
+ 10 X360     Sports                 139.  
+ 11 DS       Misc                   138.  
+ 12 PS3      Sports                 136.  
+ 13 DS       Simulation             132.  
+ 14 PS       Action                 127.  
+ 15 DS       Role-Playing           127.  
+ 16 PS       Sports                 121.  
+ 17 Wii      Action                 119.  
+ 18 DS       Action                 116.  
+ 19 PS2      Shooter                109.  
+ 20 PS       Racing                 103.  
+ 21 PS2      Misc                   101.  
+ 22 NES      Platform                95.8 
+ 23 PS2      Role-Playing            93.5 
+ 24 PS2      Fighting                92.6 
+ 25 X360     Misc                    92.0 
+ 26 Wii      Platform                90.7 
+ 27 GB       Role-Playing            88.2 
+ 28 PS4      Action                  87.1 
+ 29 DS       Puzzle                  84.3 
+ 30 GBA      Platform                78.3 
+ 31 PS       Role-Playing            78.3 
+ 32 DS       Platform                77.4 
+ 33 3DS      Role-Playing            75.7 
+ 34 PS4      Shooter                 75.3 
+ 35 PS3      Role-Playing            75.3 
+ 36 PS3      Racing                  74.0 
+ 37 PS       Fighting                72.7 
+ 38 PS2      Platform                72.5 
+ 39 X360     Role-Playing            72.0 
+ 40 X360     Racing                  66.0 
+ 41 SNES     Platform                65.6 
+ 42 PSP      Action                  64.7 
+ 43 GBA      Role-Playing            64.2 
+ 44 PS       Platform                64.2 
+ 45 XB       Shooter                 63.6 
+ 46 Wii      Racing                  61.3 
+ 47 3DS      Action                  57.0 
+ 48 GBA      Action                  55.8 
+ 49 GB       Platform                54.9 
+ 50 XB       Sports                  54.3 
+ 51 PC       Simulation              51.9 
+ 52 PS3      Fighting                51.7 
+ 53 XOne     Shooter                 51.6 
+ 54 PS4      Sports                  50.1 
+ 55 XB       Action                  49.3 
+ 56 PSP      Role-Playing            49.0 
+ 57 PS3      Misc                    47.8 
+ 58 PC       Role-Playing            47.8 
+ 59 GB       Puzzle                  47.5 
+ 60 DS       Adventure               47.3 
+ 61 PC       Strategy                45.9 
+ 62 PC       Shooter                 45.3 
+ 63 PS       Misc                    44.9 
+ 64 PS2      Simulation              42.7 
+ 65 PSP      Sports                  41.7 
+ 66 N64      Racing                  40.1 
+ 67 PS       Shooter                 39.3 
+ 68 DS       Racing                  38.6 
+ 69 GC       Action                  37.8 
+ 70 X360     Fighting                37.6 
+ 71 Wii      Simulation              37.0 
+ 72 SNES     Role-Playing            36.4 
+ 73 GBA      Misc                    36.2 
+ 74 N64      Platform                36.1 
+ 75 NES      Shooter                 35.6 
+ 76 PSP      Racing                  34.7 
+ 77 XOne     Action                  33.8 
+ 78 N64      Sports                  32.8 
+ 79 3DS      Platform                32.2 
+ 80 DS       Sports                  31.8 
+ 81 PC       Action                  31.5 
+ 82 XB       Racing                  31.5 
+ 83 PS3      Platform                30.3 
+ 84 N64      Action                  29.6 
+ 85 2600     Action                  29.3 
+ 86 Wii      Shooter                 28.8 
+ 87 NES      Action                  28.8 
+ 88 GC       Platform                28.7 
+ 89 3DS      Simulation              27.1 
+ 90 SNES     Fighting                27.0 
+ 91 NES      Sports                  26.8 
+ 92 2600     Shooter                 26.5 
+ 93 PS4      Role-Playing            25.8 
+ 94 GC       Sports                  25.5 
+ 95 PS       Simulation              25.3 
+ 96 XOne     Sports                  24.0 
+ 97 Wii      Fighting                23.9 
+ 98 PS3      Adventure               22.9 
+ 99 N64      Fighting                22.1 
+100 PSP      Fighting                22.0 
+101 GC       Racing                  21.9 
+102 PS       Strategy                21.7 
+103 WiiU     Platform                21.2 
+104 PS2      Adventure               21.2 
+105 NES      Puzzle                  21   
+106 PS       Adventure               21.0 
+107 PSV      Action                  20.0 
+108 PSP      Shooter                 19.8 
+109 WiiU     Action                  19.4 
+110 N64      Shooter                 19.3 
+111 GBA      Racing                  18.8 
+112 NES      Role-Playing            18.8 
+113 GC       Fighting                18.4 
+114 Wii      Adventure               18.4 
+115 SNES     Sports                  17.9 
+116 PSP      Platform                17.3 
+117 GB       Adventure               17.2 
+118 GC       Misc                    16.7 
+119 GBA      Sports                  16.4 
+120 Wii      Puzzle                  15.7 
+121 GEN      Platform                15.4 
+122 DS       Strategy                15.4 
+123 X360     Adventure               15.2 
+124 PS2      Strategy                15.2 
+125 2600     Puzzle                  14.7 
+126 GBA      Adventure               14.7 
+127 3DS      Racing                  14.5 
+128 X360     Simulation              14.4 
+129 Wii      Role-Playing            14.1 
+130 PSP      Misc                    14.0 
+131 GC       Shooter                 13.6 
+132 XB       Fighting                13.6 
+133 XB       Role-Playing            13.5 
+134 SNES     Racing                  13.5 
+135 PSV      Role-Playing            13.4 
+136 GB       Misc                    13.4 
+137 2600     Platform                13.3 
+138 GC       Role-Playing            13.2 
+139 GBA      Puzzle                  12.9 
+140 WiiU     Misc                    12.2 
+141 PS       Puzzle                  12.1 
+142 PC       Sports                  12.0 
+143 PS4      Racing                  11.5 
+144 X360     Platform                11.4 
+145 N64      Misc                    11.2 
+146 PS3      Simulation              10.8 
+147 PSP      Adventure               10.7 
+148 PSP      Strategy                10.6 
+149 3DS      Misc                    10.5 
+150 3DS      Fighting                10.5 
+151 N64      Strategy                10.3 
+152 N64      Simulation              10.2 
+153 X360     Strategy                10.1 
+154 PC       Adventure               10.1 
+155 SNES     Action                  10.1 
+156 NES      Racing                   9.78
+157 XB       Platform                 9.66
+158 XB       Misc                     9.58
+159 XOne     Role-Playing             9.48
+160 GB       Sports                   9.05
+161 XOne     Racing                   8.8 
+162 GC       Simulation               8.59
+163 PC       Misc                     8.56
+164 SAT      Fighting                 8.52
+165 DS       Shooter                  8.2 
+166 GB       Strategy                 8.05
+167 PS4      Fighting                 8.04
+168 GB       Action                   7.92
+169 WiiU     Racing                   7.77
+170 GBA      Strategy                 7.45
+171 PS4      Misc                     7.4 
+172 DS       Fighting                 7.2 
+173 XB       Simulation               7.11
+174 PS4      Platform                 7.01
+175 XOne     Misc                     6.86
+176 NES      Fighting                 6.54
+177 SNES     Puzzle                   6.38
+178 WiiU     Fighting                 6.36
+179 PSP      Simulation               6.28
+180 3DS      Sports                   6.2 
+181 WiiU     Shooter                  6.17
+182 SNES     Shooter                  6.07
+183 GC       Adventure                5.93
+184 GBA      Simulation               5.91
+185 GEN      Fighting                 5.9 
+186 PS2      Puzzle                   5.9 
+187 SNES     Simulation               5.63
+188 3DS      Puzzle                   5.57
+189 PSP      Puzzle                   5.52
+190 Wii      Strategy                 5.23
+191 PSV      Misc                     5.18
+192 SNES     Misc                     5.02
+193 SNES     Strategy                 4.98
+194 PS3      Strategy                 4.94
+195 PSV      Sports                   4.88
+196 3DS      Adventure                4.81
+197 GC       Puzzle                   4.7 
+198 PS4      Adventure                4.7 
+199 PSV      Shooter                  4.57
+200 GB       Racing                   4.55
+201 NES      Adventure                4.38
+202 GC       Strategy                 4.32
+203 GBA      Fighting                 4.21
+204 PSV      Adventure                4.18
+205 SAT      Adventure                4.16
+206 PC       Racing                   4.06
+207 SAT      Shooter                  3.98
+208 SAT      Role-Playing             3.76
+209 DC       Sports                   3.66
+210 GBA      Shooter                  3.6 
+211 NES      Misc                     3.59
+212 2600     Misc                     3.58
+213 GB       Simulation               3.55
+214 2600     Sports                   3.43
+215 N64      Puzzle                   3.41
+216 N64      Role-Playing             3.36
+217 WiiU     Sports                   3.32
+218 SAT      Strategy                 3.24
+219 GEN      Sports                   3.2 
+220 PSV      Fighting                 3.15
+221 XB       Adventure                3.06
+222 PSV      Platform                 3.03
+223 PSV      Racing                   2.95
+224 2600     Racing                   2.91
+225 SAT      Sports                   2.79
+226 XB       Strategy                 2.78
+227 GEN      Action                   2.74
+228 DC       Racing                   2.65
+229 DC       Platform                 2.54
+230 XOne     Adventure                2.51
+231 DC       Adventure                2.5 
+232 WiiU     Role-Playing             2.47
+233 SAT      Racing                   2.4 
+234 XOne     Fighting                 2.31
+235 3DS      Strategy                 2.09
+236 DC       Fighting                 1.83
+237 2600     Adventure                1.7 
+238 SCD      Platform                 1.5 
+239 SNES     Adventure                1.5 
+240 NG       Fighting                 1.42
+241 WiiU     Puzzle                   1.33
+242 3DS      Shooter                  1.29
+243 DC       Action                   1.26
+244 2600     Fighting                 1.24
+245 WiiU     Strategy                 1.24
+246 WS       Role-Playing             1.22
+247 GB       Shooter                  1.2 
+248 SAT      Misc                     1.2 
+249 SAT      Simulation               1.13
+250 SAT      Puzzle                   1   
+251 PC       Puzzle                   0.92
+252 X360     Puzzle                   0.85
+253 XOne     Platform                 0.81
+254 PS4      Simulation               0.77
+255 SAT      Platform                 0.76
+256 DC       Role-Playing             0.68
+257 SAT      Action                   0.65
+258 PS3      Puzzle                   0.6 
+259 XOne     Simulation               0.54
+260 DC       Simulation               0.52
+261 PC       Platform                 0.49
+262 2600     Simulation               0.45
+263 N64      Adventure                0.45
+264 XB       Puzzle                   0.42
+265 PS4      Strategy                 0.41
+266 XOne     Strategy                 0.38
+267 DC       Shooter                  0.33
+268 PSV      Strategy                 0.31
+269 GEN      Role-Playing             0.27
+270 PC       Fighting                 0.27
+271 GEN      Racing                   0.26
+272 WiiU     Simulation               0.21
+273 PSV      Puzzle                   0.2 
+274 WS       Strategy                 0.2 
+275 GEN      Adventure                0.19
+276 GEN      Strategy                 0.19
+277 WiiU     Adventure                0.17
+278 SCD      Strategy                 0.14
+279 TG16     Adventure                0.14
+280 GEN      Shooter                  0.13
+281 SCD      Misc                     0.1 
+282 PSV      Simulation               0.08
+283 SCD      Racing                   0.07
+284 3DO      Adventure                0.06
+285 SCD      Role-Playing             0.06
+286 GG       Platform                 0.04
+287 GEN      Misc                     0.03
+288 PCFX     Role-Playing             0.03
+289 3DO      Puzzle                   0.02
+290 3DO      Simulation               0.02
+291 NG       Sports                   0.02
+292 PS4      Puzzle                   0.02
+293 TG16     Shooter                  0.02
