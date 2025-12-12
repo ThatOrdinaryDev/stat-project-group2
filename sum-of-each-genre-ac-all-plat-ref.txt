@@ -104,7 +104,7 @@ Platform Genre        Tot_Global_Sales
 102 PS       Strategy                21.7 
 103 WiiU     Platform                21.2 
 104 PS2      Adventure               21.2 
-105 NES      Puzzle                  21   
+105 NES      Puzzle                  21    
 106 PS       Adventure               21.0 
 107 PSV      Action                  20.0 
 108 PSP      Shooter                 19.8 
