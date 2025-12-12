@@ -1,5 +1,6 @@
 library(dplyr)
 library(ggplot2)
+library(ggrepel)
 
 #code for all platform global sales
 general_platform_sales <- vgsales %>% group_by(Platform) %>% summarise(Tot_Global_Sales = sum(Global_Sales, na.rm = TRUE)) %>% arrange(desc(Tot_Global_Sales))
@@ -37,3 +38,11 @@ print(plat_sales, n = 293)
 
 #bar chart for global sales across platforms and genres
 ggplot(plat_sales, aes(x = reorder(Platform, -Tot_Global_Sales), y = Tot_Global_Sales, fill = Genre)) + geom_bar(stat = "identity", position = "dodge") + labs(title = "global sales differ across genres and platforms", x = "platform", y = "Global sales (Million)") + theme_light()
+
+#scatterplot for question 2
+question_2_graph <- vgsales %>% group_by(Publisher) %>% summarise(Total_Titles = n(), Total_Global_Sales = sum(Global_Sales, na.rm = TRUE)) %>% arrange(desc(Total_Titles))
+highlight <- c("Nintendo", "Electronic Arts", "Activision", "Ubisoft", "Sony Computer Entertainment", "THQ", "Namco Bandai Games", "Konami Digital Entertainment")
+ggplot(question_2_graph, aes(x = Total_Titles, y = Total_Global_Sales)) + geom_point(color = "orange", size = 3, alpha = 0.7) + geom_smooth(method = "lm", se = FALSE, color = "black", linewidth = 1) + geom_text_repel(data = subset(question_2_graph, Publisher %in% highlight), aes(label = Publisher), size = 4, box.padding = 0.4) + labs(title = "Publisher's total titles vs global sales", x = "Total Titles Released", y = "Total Global Sales (Millions)") + theme_minimal()
+
+#additional heatmap for question 3
+ggplot(plat_sales, aes(x = Platform, y = Genre, fill = Tot_Global_Sales)) + geom_tile(color="blue")+  geom_text(aes(label = round(Tot_Global_Sales, 1)), color = "cyan", size = 3) + scale_fill_viridis_c() + labs(title = "Global Sales by Genres and Platforms", x = "Platform", y = "Genre", fill = "Global Sales (Millions)") + theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
