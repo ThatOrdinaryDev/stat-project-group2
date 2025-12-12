@@ -54,3 +54,11 @@ ggplot(question_2_graph, aes(x = Total_Titles, y = Total_Global_Sales)) + geom_p
 
 #additional heatmap for question 3
 ggplot(plat_sales, aes(x = Platform, y = Genre, fill = Tot_Global_Sales)) + geom_tile(color="blue")+  geom_text(aes(label = round(Tot_Global_Sales, 2)), color = "cyan", size = 3) + scale_fill_viridis_c() + labs(title = "Global Sales by Genres and Platforms", x = "Platform", y = "Genre", fill = "Global Sales (Millions)") + theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+#checking for statistically significance in the relationship between the number of titles published and the total global sales each publisher generates
+model <- lm(Total_Global_Sales ~ Total_Titles, data = question_2_graph)
+summary(model)
+#confidence interval
+confint(model, level = 0.95)
+#slope coefficient
+coef(summary(model))[2, 4]
