@@ -26,6 +26,11 @@ ggplot(top_publisher_sale, aes(x = reorder(Publisher, - Tot_Global_Sales), y = T
 title_count <- vgsales %>% group_by(Platform) %>% summarise(total_title = n()) %>% arrange(desc(total_title)) %>% slice_head(n = 30)
 ggplot(title_count, aes(x = reorder(Platform, -total_title), y = total_title)) + geom_col(fill = "gold") + geom_text(aes(label = total_title), vjust = -0.3, size = 4) + labs(title = "Total titles released by platform", x = "Platform", y = "Total titles released") + theme_minimal()
 
+#total title released by genre
+genre_count <- vgsales %>% group_by(Genre) %>% summarise(total_title = n()) %>% arrange(desc(total_title))
+ggplot(genre_count, aes(x = reorder(Genre, -total_title), y = total_title)) + geom_col(fill = "gold") + geom_text(aes(label = total_title), vjust = -0.3, size = 4) + labs(title = "Total titles released by genre", x = "Genre", y = "Total titles released") + theme_minimal()
+
+
 #total title released by Publisher
 publisher_total_titles <- vgsales %>% group_by(Publisher) %>% summarise(total_title = n()) %>% arrange(desc(total_title)) %>% slice_head(n = 30)
 ggplot(publisher_total_titles, aes(x = reorder(Publisher, -total_title), y = total_title)) + geom_col(fill = "orange") + geom_text(aes(label = total_title), hjust = -0.3, size = 4) + labs(title = "Total titles released by Publisher", x = "Publisher", y = "Total titles released") + theme_light() + coord_flip()
@@ -45,4 +50,4 @@ highlight <- c("Nintendo", "Electronic Arts", "Activision", "Ubisoft", "Sony Com
 ggplot(question_2_graph, aes(x = Total_Titles, y = Total_Global_Sales)) + geom_point(color = "orange", size = 3, alpha = 0.7) + geom_smooth(method = "lm", se = FALSE, color = "black", linewidth = 1) + geom_text_repel(data = subset(question_2_graph, Publisher %in% highlight), aes(label = Publisher), size = 4, box.padding = 0.4) + labs(title = "Publisher's total titles vs global sales", x = "Total Titles Released", y = "Total Global Sales (Millions)") + theme_minimal()
 
 #additional heatmap for question 3
-ggplot(plat_sales, aes(x = Platform, y = Genre, fill = Tot_Global_Sales)) + geom_tile(color="blue")+  geom_text(aes(label = round(Tot_Global_Sales, 1)), color = "cyan", size = 3) + scale_fill_viridis_c() + labs(title = "Global Sales by Genres and Platforms", x = "Platform", y = "Genre", fill = "Global Sales (Millions)") + theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
+ggplot(plat_sales, aes(x = Platform, y = Genre, fill = Tot_Global_Sales)) + geom_tile(color="blue")+  geom_text(aes(label = round(Tot_Global_Sales, 2)), color = "cyan", size = 3) + scale_fill_viridis_c() + labs(title = "Global Sales by Genres and Platforms", x = "Platform", y = "Genre", fill = "Global Sales (Millions)") + theme_minimal() + theme(axis.text.x = element_text(angle = 45, hjust = 1))
