@@ -1,3 +1,6 @@
+#Note: please ensure that the vgsales dataset is loaded into R before running the code.
+# Additionally, please ensure that the necessary libraries are installed and loaded into R before running the code.
+
 library(dplyr)
 library(ggplot2)
 library(ggrepel)
